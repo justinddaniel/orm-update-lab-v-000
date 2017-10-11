@@ -6,8 +6,8 @@ class Student
   attr_reader :id
 
   def initialize(id = nil, name, grade)
-    @id = id 
-    @name = name 
+    @id = id
+    @name = name
     @grade = grade
   end
 
@@ -20,7 +20,7 @@ class Student
       )
     SQL
 
-DB[:conn].execute(sql)
+    DB[:conn].execute(sql)
   end
 
   def self.drop_table
@@ -40,6 +40,6 @@ DB[:conn].execute(sql)
 
   def update
   end
-  
+
 
 end
