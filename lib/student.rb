@@ -48,7 +48,7 @@ class Student
   end
 
   def self.new_from_db(row)
-    new_student = Student.new(nil, nil, nil)
+    new_student = Student.new(nil, nil, nil) #must instantiate with placeholder arguments, then set attributes next 3 lines. 
     new_student.id = row[0]
     new_student.name = row[1]
     new_student.grade = row[2]
